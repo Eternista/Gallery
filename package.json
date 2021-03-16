@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "homepage":"https://eternista.github.io/Gallery",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "build": "^0.1.4",
     "firebase": "^8.2.9",
     "firestore": "^1.1.6",
     "framer-motion": "^3.7.0",
+    "homepage": "https://eternista.github.io/Gallery",
     "react": "^16.13.1",
     "react-bootstrap": "^1.5.0",
     "react-dom": "^16.13.1",
@@ -22,7 +23,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "publish": "subpath-as-branch --path dist --branch gh-pages"
   },
   "eslintConfig": {
     "extends": "react-app"
